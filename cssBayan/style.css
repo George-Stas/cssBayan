@@ -48,6 +48,7 @@ body {
 
 .section {
     display: none;
+    cursor: pointer;
 }
 
 .img {
@@ -61,5 +62,14 @@ body {
 
 .button-1:hover + .section-1 {
     display: block;
+}
+
+.section:hover {
+    display: block;
+}
+
+.button-1:active {
+    color:aqua;
+    
 }
 
