@@ -19,6 +19,14 @@ body {
     font-weight: bold;
 }
 
+.section {
+    color:rgb(63, 146, 146);
+}
+
+.section:hover {
+    
+}
+
 .btn {
     display: flex;
     width: 100%;
@@ -30,6 +38,7 @@ body {
     cursor: pointer;
     padding: 15px 0;
     border-top: 1px solid red;
+    transition: .2s;
 }
 
 .plus {
@@ -46,30 +55,45 @@ body {
     display: block;
 }
 
-.section {
+.section__image {
     display: none;
     cursor: pointer;
+}
+
+.input-radio {
+    position: absolute;
+    top: 999999px;
+}
+
+.input-radio:checked + .section__image {
+    display: block;
 }
 
 .img {
     width: 100%;
 }
 
-.button-1:hover .plus {
+.btn:hover .plus {
     transform: rotate(45deg);
-    transition: .5s;
-}
-
-.button-1:hover + .section-1 {
-    display: block;
+    transition: transform 0.2s;
 }
 
 .section:hover {
+    color:black;
+}
+
+.section:hover .section__image {
     display: block;
 }
 
-.button-1:active {
-    color:aqua;
+
+.section__image:hover {
+    display: block;
+    transition: all .2s;
+}
+
+.btn:active {
+    color:rgb(63, 146, 146);
     
 }
 
