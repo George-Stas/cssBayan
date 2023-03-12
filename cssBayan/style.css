@@ -15,7 +15,7 @@ body {
 }
 
 .h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -29,7 +29,7 @@ body {
     text-align: left;
     border: none;
     background-color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
     padding: 15px 0;
@@ -39,7 +39,10 @@ body {
 
 .plus {
     text-align: right;
-    display: none;
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .container {
@@ -66,7 +69,8 @@ body {
 }
 
 .img {
-    width: 100%;
+    width: 70%;
+    
 }
 
 .btn:hover .plus {
@@ -90,6 +94,82 @@ body {
 
 .btn:active {
     color:rgb(63, 146, 146);
-    
 }
 
+@media(max-width: 1366px) {
+    .h1 {
+        font-size: 35px;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+
+    .container {
+        margin: 0 160px;
+    }
+
+    .text {
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 880px) {
+    .h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 0 120px;
+    }
+}
+
+@media(max-width: 800px) {
+    .h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 672px) {
+    .h1 {
+        font-size: 20px;
+    }
+    
+    .btn {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .h1 {
+        font-size: 15px;
+    }
+    
+    .btn {
+        font-size: 10px;
+    }
+
+    .container {
+        margin: 0 10px;
+    }
+}
+
+.section__image {
+    text-align: center;
+}
