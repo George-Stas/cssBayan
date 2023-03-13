@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    margin-right: auto;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.section {
+    color:rgb(63, 146, 146);
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 0;
+    border-top: 1px solid red;
+    transition: .2s;
+}
+
+.plus {
+    text-align: right;
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container {
+    margin: 0 220px;
+    max-width: 1920px;
+}
+
+.container:hover .plus {
+    display: block;
+}
+
+.section__image {
+    display: none;
+    cursor: pointer;
+}
+
+.input-radio {
+    position: absolute;
+    top: 999999px;
+}
+
+.input-radio:checked + .section__image {
+    display: block;
+}
+
+.img {
+    width: 70%;
+    
+}
+
+.btn:hover .plus {
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+}
+
+.section:hover {
+    color:black;
+}
+
+.section:hover .section__image {
+    display: block;
+}
+
+
+.section__image:hover {
+    display: block;
+    transition: all .2s;
+}
+
+.btn:active {
+    color:rgb(63, 146, 146);
+}
+
+@media(max-width: 1366px) {
+    .h1 {
+        font-size: 35px;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+
+    .container {
+        margin: 0 160px;
+    }
+
+    .text {
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 880px) {
+    .h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 0 120px;
+    }
+}
+
+@media(max-width: 800px) {
+    .h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 672px) {
+    .h1 {
+        font-size: 20px;
+    }
+    
+    .btn {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .h1 {
+        font-size: 15px;
+    }
+    
+    .btn {
+        font-size: 10px;
+    }
+
+    .container {
+        margin: 0 10px;
+    }
+}
+
+.section__image {
+    text-align: center;
+}
